@@ -66,7 +66,6 @@ textarea {
     border: none;
     border-radius: 5px;
     font-size: 16px;
-    height: auto;
     width: 100%;
     padding: 15px;
     margin-bottom: 20px;
@@ -78,8 +77,7 @@ input[type="text"]:focus,
 input[type="email"]:focus,
 input[type="tel"]:focus,
 select:focus,
-textarea:focus,
-button:focus {
+textarea:focus {
     border: 2px solid #55687A;
     transition: all 0.3s;
 }
@@ -91,6 +89,9 @@ input::placeholder {
     font-size: 12px;
 }
 
+textarea {
+    height: 100px;
+}
 textarea::placeholder {
     font-style: italic;
 }
@@ -181,12 +182,14 @@ footer {
     }
 
     .contact-info {
+        display: flex;
+        flex-wrap: wrap;
         padding-bottom: 30px;
     }
 
     .contact-info label {
-        display:inline-block;
-        width: 29%;
+        align-self: center;
+        width: 30%;
     }
 
     legend {
