@@ -5,8 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;1,300&display=swap" rel="stylesheet">
-  <link href="css/normalize.css" ref="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,700;1,300&display=swap" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
   <link href="css/styles.css" rel="stylesheet">
   <title>Online Registration Form</title>  
 </head>
@@ -28,24 +28,24 @@
 
             <form action="index.html" method="post">
 
-                <fieldset>
+                <fieldset class="contact-info">
 
                     <legend>Contact Information</legend>
 
                     <label for="name">Full Name</label>
-                    <input type="text" id="name" name="user-name" placeholder="Required"><br>
+                    <input type="text" required id="name" name="user-name" placeholder="Required">
 
                     <label for="email">Email Address</label>
-                    <input type="email" id="email" name="user-email" placeholder="Required"><br>
+                    <input type="email" required id="email" name="user-email" placeholder="Required">
 
                     <label for="phone">Phone Number</label>
-                    <input type="tel" id="phone" name="user-phone"><br>
+                    <input type="tel" id="phone" name="user-phone">
 
                     <label for="street">Street Address</label>
-                    <input type="text" id="street" name="user-street"><br>
+                    <input type="text" required id="street" name="user-street" placeholder="Required">
 
                     <label for="city">City</label>
-                    <input type="text" id="city" name="user-city"><br>
+                    <input type="text" required id="city" name="user-city" placeholder="Required">
 
                     <label for="state">State</label>
                     <select id="state" name="user-state">
@@ -61,11 +61,9 @@
                     <br>
 
                     <label for="zip">Zip Code</label>
-                    <input type="text" id="zip" name="user-zip">
+                    <input type="text" required id="zip" name="user-zip" placeholder="Required">
 
                 </fieldset>
-
-                <hr size="5" color="#2D3945">
 
                 <fieldset>
 
@@ -90,11 +88,11 @@
                     </div>
 
                     <label for="other">Other topics you'd like to hear about</label>
-                    <textarea id="other" name="user-other"></textarea>
+                    <textarea id="other" name="user-other" placeholder="Comment"></textarea>
 
                 </fieldset>
 
-                <button type="submit">Sign Up</button>
+                <button type="submit" class="button">Sign Up</button>
 
             </form>
 
@@ -103,7 +101,7 @@
     </main>
 
     <footer>
-        <p>Copyright The Code Review</p>
+        <p>&copy;The Code Review</p>
     </footer>
 
 </body>
